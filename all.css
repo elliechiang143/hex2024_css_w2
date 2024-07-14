@@ -1,0 +1,356 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-primary: #00FFA3;
+  --color-gradient: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.title-lg {
+  font-size: 8rem;
+}
+
+.title-md {
+  font-size: 4rem;
+}
+
+.fc-white {
+  color: var(--color-white);
+}
+
+.fc-primary {
+  color: var(--color-primary);
+}
+
+.fc-black {
+  color: var(--color-black);
+}
+
+.fs-1 {
+  font-size: 2rem;
+}
+
+.fs-2 {
+  font-size: 1.5rem;
+}
+
+.fs-3 {
+  font-size: 1.25rem;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.ml-a {
+  margin-left: auto;
+}
+
+.mr-a {
+  margin-right: auto;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 3rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+}
+
+.btn-white {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.btn-black {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+.nav {
+  background-color: var(--color-black);
+}
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav ul a {
+  display: block;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.nav ul a:hover {
+  color: var(--color-primary);
+}
+
+.header {
+  background-color: var(--color-black);
+  padding-top: 4.5rem;
+  padding-bottom: 2rem;
+}
+.header .d-flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+.header .pic, .header .name {
+  width: 50%;
+}
+.header .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.header .name h1, .header .name a {
+  margin-left: auto;
+}
+
+.introduction {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.introduction .content {
+  width: 526px;
+}
+.introduction .content h3 {
+  margin-bottom: 36px;
+}
+.introduction .content p {
+  margin-bottom: 32px;
+}
+.introduction .sparkle {
+  gap: 16px;
+}
+.introduction-wrap {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.about .d-flex {
+  margin-left: -6px;
+  margin-right: -6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .card-wrap {
+  width: 636px;
+}
+.about .card-list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about .card-list .column {
+  width: 50%;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 24px;
+}
+.about .card {
+  border: 1px solid #E3E3E3;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+.about .content-wrap {
+  width: 526px;
+}
+.about .content h3 {
+  margin-bottom: 36px;
+}
+
+.contact {
+  background: var(--color-gradient);
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.contact .title h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .title h3::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/trending_flat_black_24dp%201.png?raw=true");
+  margin-left: 16px;
+}
+.contact .sns {
+  gap: 20px;
+}
+.contact .sns-icon {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+.contact .sns-icon:hover {
+  -webkit-box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
+          box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
+}
+
+.project {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.project h3 {
+  margin-left: 41.6666666667%;
+  margin-bottom: 16px;
+}
+.project-left {
+  width: 416px;
+}
+.project-right {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.project .content {
+  margin-bottom: 28px;
+}
+.project .more {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.project .more .btn {
+  margin-top: auto;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
